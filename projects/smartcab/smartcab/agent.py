@@ -60,8 +60,8 @@ class LearningAgent(Agent):
         #   If it is not, create a dictionary in the Q-table for the current 'state'
         #   For each action, set the Q-value for the state-action pair to 0
         
-        state = None
-
+        state = [waypoint,inputs,deadline];
+        if 
         return state
 
 
@@ -173,7 +173,7 @@ def run():
     #   display      - set to False to disable the GUI if PyGame is enabled
     #   log_metrics  - set to True to log trial and simulation results to /logs
     #   optimized    - set to True to change the default log file name
-    sim = Simulator(env,update_delay=0.01,log_metrics=True,display=False)
+    sim = Simulator(env,update_delay=2,log_metrics=True,display=True);
     
     ##############
     # Run the simulator
